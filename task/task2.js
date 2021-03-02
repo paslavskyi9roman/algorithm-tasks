@@ -9,7 +9,7 @@ function task(arr) {
     bank.push(Math.sqrt(num))
   }
 
-  console.log(`max of [${arr}] is ${max}. And sum of square root is ${bank.reduce((acc, curVal) => acc + curVal, 0)}`)
+  console.log(`max value of [${arr}] is ${max}. And sum of square root is ${bank.reduce((acc, curVal) => acc + curVal, 0)}`)
 }
 
-task([1, 25, 6, 9, 12])
+task([1, 25, 6, 9, 12]) //result will be:  max value of [1,25,6,9,12] is 25. And sum of square root is 14.913591357920932
