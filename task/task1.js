@@ -2,7 +2,7 @@
 //все отрицательные члены увеличить на 0.5, а все неотрицательные заменить на 0.1
 
 function task(arr) {
-  let result = []
+  const result = []
   for (let num of arr) {
     if (num >= 0) {
       num = 0.1
