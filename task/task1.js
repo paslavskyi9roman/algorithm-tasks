@@ -3,15 +3,10 @@
 
 function task(arr) {
   const result = []
-  for (let num of arr) {
-    if (num >= 0) {
-      num = 0.1
-      result.push(num)
-    } else {
-      result.push(num + 0.5)
-    }
-  }
-  return result
+
+  arr.map((x) => (x > 0 ? result.push(0.1) : result.push(x + 0.5)))
+
+  console.log(result)
 }
 
-console.log(task([-2, 20, -5, 1, 12, 6, -5, -20])) // result will be [ -1.5, 0.1, -4.5, 0.1, 0.1, 0.1, -4.5, -19.5 ]
+task([-2, 20, -5, 1, 12, 6, -5, -20])
