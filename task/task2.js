@@ -4,8 +4,8 @@ function task(arr) {
   const findMax = (arr) => Math.max(...arr.map((x) => Math.abs(x)))
   console.log(`Найбільше число по модулю - ${findMax(arr)}`)
 
-  const sqrt = (arr) => Math.hypot(arr.reduce((acc, curVal) => acc + curVal, 0))
+  const sqrt = (arr) => Math.hypot(...arr)
   console.log(`Корінь з суми квадрату аргументів - ${sqrt(arr)}`)
 }
 
-task([20, -5, -200, 100])
+task([20, -5, -200, -500, 100])
